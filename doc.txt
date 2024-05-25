@@ -1,0 +1,3 @@
+vitejs -> công cụ bluid cho front end
+
+-- Khởi tạo dự án: npm create vite

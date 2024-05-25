@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const useState = (initState) => {
+        let state = initState;
+        function setState(newState) {
+          return (state = newState);
+          reRender();
+        }
+        return [state, setState];
+      };
+
+      function reRender() {
+        // Render lại component khi state bị thay đổi
+      }
+
+      const [a, b] = useState([]);
+    </script>
+  </body>
+</html>
